@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.scaleShop.controller.ProductFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="1086.0" layoutX="-23.0" layoutY="-4.0" opacity="0.82" stroke="#59ce8f" strokeType="INSIDE" width="420.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8398058252427185">
+               <stops>
+                  <Stop color="#a8e890" />
+                  <Stop color="#59ce8f" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <MotionBlur />
+         </effect>
+      </Rectangle>
+      <Button layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#LogoutOnAction" prefHeight="40.0" prefWidth="150.0" style="-fx-background-radius: 30; -fx-background-color: #002B5B;" text="LogOut" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="140.0" fitWidth="350.0" layoutX="33.0" layoutY="923.0">
+         <image>
+            <Image url="@../assest/04.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Text layoutX="487.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRODUCT FORM" wrappingWidth="678.6744995117188">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#0f0768" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Button layoutX="1721.0" layoutY="576.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="51.0" prefWidth="136.0" style="-fx-background-color: #CF0A0A;" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="1362.0" layoutY="575.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="51.0" prefWidth="150.0" style="-fx-background-color: #5FD068;" text="Save" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="tblProduct" layoutX="488.0" layoutY="650.0" onMouseClicked="#rowClicked" prefHeight="333.0" prefWidth="1369.0">
+         <columns>
+            <TableColumn fx:id="colProductCode" prefWidth="151.3333740234375" text="Product Code" />
+            <TableColumn fx:id="colType" minWidth="4.0" prefWidth="377.6666259765625" text="Product Type" />
+            <TableColumn fx:id="colDescription" prefWidth="286.33331298828125" text="Description" />
+            <TableColumn fx:id="colPrice" prefWidth="345.0" text="Quntity" />
+            <TableColumn fx:id="colQty" prefWidth="206.0" text="Qty" />
+         </columns>
+      </TableView>
+      <Button layoutX="28.0" layoutY="115.0" mnemonicParsing="false" onAction="#DashboardOnAction" prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #425F57; -fx-background-radius: 30;" text="   Dash Board">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8398058252427185">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="28.0" layoutY="236.0" mnemonicParsing="false" onAction="#IncomeOnAction" prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #425F57; -fx-background-radius: 30;" text="Income">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8398058252427185">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="28.0" layoutY="361.0" mnemonicParsing="false" onAction="#BillOnAction" prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #425F57; -fx-background-radius: 30;" text="Finance">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8398058252427185">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="25.0" layoutY="600.0" mnemonicParsing="false" onAction="#CustomerOnAction" prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #425F57; -fx-background-radius: 30;" text="Customer">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8398058252427185">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="44.0" layoutY="608.0">
+         <image>
+            <Image url="@../assest/i11.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="26.0" layoutY="725.0" mnemonicParsing="false" onAction="#ProductOnAction" prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #425F57; -fx-background-radius: 30;" text="Product">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8398058252427185">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="44.0" layoutY="733.0">
+         <image>
+            <Image url="@../assest/i6.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="25.0" layoutY="846.0" mnemonicParsing="false" onAction="#SupplierOnAction" prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #425F57; -fx-background-radius: 30;" text="Supplier">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8398058252427185">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="44.0" layoutY="244.0">
+         <image>
+            <Image url="@../assest/i12.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="44.0" layoutY="369.0">
+         <image>
+            <Image url="@../assest/i4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="44.0" layoutY="854.0">
+         <image>
+            <Image url="@../assest/i9.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="27.0" layoutY="481.0" mnemonicParsing="false" onAction="#placeOrderOnAction" prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #425F57; -fx-background-radius: 30;" text=" Place Order">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8398058252427185">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="44.0" layoutY="489.0">
+         <image>
+            <Image url="@../assest/i13.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="44.0" layoutY="123.0">
+         <image>
+            <Image url="@../assest/i3.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="1542.0" layoutY="575.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="51.0" prefWidth="150.0" style="-fx-background-color: #647E68;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="487.0" layoutY="165.0" text="Code :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCode" layoutX="487.0" layoutY="223.0" onAction="#txtCodeOnAction" prefHeight="50.0" prefWidth="560.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="1291.0" layoutY="185.0" text="Type :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="487.0" layoutY="314.0" text="Description :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1295.0" layoutY="314.0" prefHeight="27.0" prefWidth="103.0" text="Unit Price :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtType" layoutX="1295.0" layoutY="223.0" prefHeight="50.0" prefWidth="560.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDescription" layoutX="487.0" layoutY="363.0" prefHeight="50.0" prefWidth="560.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPrice" layoutX="1295.0" layoutY="355.0" prefHeight="50.0" prefWidth="560.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="487.0" layoutY="454.0" text="Quntity On Hand  :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQty" layoutX="487.0" layoutY="501.0" prefHeight="50.0" prefWidth="560.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="1512.0" layoutY="993.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="51.0" prefWidth="150.0" style="-fx-background-color: #FED049;" text="Clear" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <JFXTextField fx:id="txtSearch" layoutX="567.0" layoutY="591.0" onAction="#txtSearchOnAction" prefHeight="52.0" prefWidth="334.0" promptText="Search" />
+      <ImageView fitHeight="55.0" fitWidth="53.0" layoutX="488.0" layoutY="588.0">
+         <image>
+            <Image url="@../assest/g4.gif" />
+         </image>
+      </ImageView>
+      <Button layoutX="1705.0" layoutY="993.0" mnemonicParsing="false" onAction="#btnReportOnAction" prefHeight="51.0" prefWidth="150.0" style="-fx-background-color: #5FD068;" text="Report" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

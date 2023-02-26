@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.scaleShop.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1953.0" layoutX="-7.0">
+         <image>
+            <Image url="@../assest/05.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="696.0" fitWidth="636.0" layoutX="192.0" layoutY="-234.0">
+         <image>
+            <Image url="@../assest/02.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="148.0" layoutY="535.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to The Scale Home" textAlignment="CENTER" wrappingWidth="767.8125">
+         <font>
+            <Font size="66.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="83.2" radius="63.644999999999996" spread="0.11" width="173.38" />
+         </effect>
+      </Text>
+      <Pane layoutX="1072.0" layoutY="154.0" prefHeight="786.0" prefWidth="650.0" style="-fx-background-color: #ffffff; -fx-background-radius: 50;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <TextField fx:id="txtUsername" layoutX="50.0" layoutY="297.0" prefHeight="87.0" prefWidth="550.0" promptText="Username" style="-fx-background-radius: 30;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txtPassword" layoutX="47.0" layoutY="455.0" prefHeight="87.0" prefWidth="556.0" promptText="Password" style="-fx-background-radius: 30;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </PasswordField>
+            <Button layoutX="47.0" layoutY="629.0" mnemonicParsing="false" onAction="#LoginOnAction" prefHeight="50.0" prefWidth="556.0" style="-fx-background-radius: 30; -fx-background-color: #002B5B; -fx-background-color: #59CE8F;" text="Login">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="105.0" fitWidth="95.0" layoutX="288.0" layoutY="-52.0">
+               <image>
+                  <Image url="@../assest/i2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="236.0" layoutY="82.0">
+               <image>
+                  <Image url="@../assest/2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button layoutX="34.0" layoutY="34.0" mnemonicParsing="false" onAction="#btnExitOnAction" prefHeight="40.0" prefWidth="150.0" style="-fx-background-radius: 30; -fx-background-color: #002B5B;" text="Exit" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

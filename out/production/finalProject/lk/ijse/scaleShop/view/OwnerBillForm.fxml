@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.scaleShop.controller.OwnerBillFormController">
+   <children>
+      <Text layoutX="527.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FINANCE MANAGE" wrappingWidth="678.6744995117188">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5340909090909091" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#0f0768" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="1086.0" layoutX="-4.0" opacity="0.82" stroke="#59ce8f" strokeType="INSIDE" width="420.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8398058252427185">
+               <stops>
+                  <Stop color="#a8e890" />
+                  <Stop color="#59ce8f" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <MotionBlur />
+         </effect>
+      </Rectangle>
+      <Button layoutX="23.0" layoutY="23.0" mnemonicParsing="false" onAction="#LogoutOnAction" prefHeight="40.0" prefWidth="150.0" style="-fx-background-radius: 30; -fx-background-color: #002B5B;" text="LogOut" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="140.0" fitWidth="350.0" layoutX="31.0" layoutY="864.0">
+         <image>
+            <Image url="@../assest/04.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Button layoutX="37.0" layoutY="157.0" mnemonicParsing="false" onAction="#DashboardOnAction" prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #425F57; -fx-background-radius: 30;" text="     Dash Board">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8398058252427185">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="55.0" layoutY="163.0">
+         <image>
+            <Image url="@../assest/i3.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="36.0" layoutY="293.0" mnemonicParsing="false" onAction="#IncomeOnAction" prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #425F57; -fx-background-radius: 30;" text="Income">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8398058252427185">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="36.0" layoutY="429.0" mnemonicParsing="false" onAction="#BillOnAction" prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #425F57; -fx-background-radius: 30;" text="Finance">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8398058252427185">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="37.0" layoutY="714.0" mnemonicParsing="false" onAction="#EmployeeOnAction" prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #425F57; -fx-background-radius: 30;" text="Employee">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8398058252427185">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="50.0" layoutY="301.0">
+         <image>
+            <Image url="@../assest/i12.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="50.0" layoutY="437.0">
+         <image>
+            <Image url="@../assest/i4.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="36.0" layoutY="574.0" mnemonicParsing="false" onAction="#ProductOnAction" prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #425F57; -fx-background-radius: 30;" text="Product">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8398058252427185">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="50.0" layoutY="582.0">
+         <image>
+            <Image url="@../assest/i6.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="50.0" layoutY="722.0">
+         <image>
+            <Image url="@../assest/i10.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="429.0" layoutY="294.0" opacity="0.35" prefHeight="559.0" prefWidth="480.0" style="-fx-background-color: #A1C298;" />
+      <Pane layoutX="930.0" layoutY="293.0" opacity="0.35" prefHeight="559.0" prefWidth="480.0" style="-fx-background-color: #A1C298;" />
+      <Pane layoutX="1432.0" layoutY="292.0" opacity="0.35" prefHeight="559.0" prefWidth="480.0" style="-fx-background-color: #A1C298;" />
+      <StackedBarChart layoutX="1460.0" layoutY="405.0" prefHeight="430.0" prefWidth="440.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </StackedBarChart>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6b7783" height="349.0" layoutX="1534.0" layoutY="459.0" stroke="BLACK" strokeType="INSIDE" width="47.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6b7783" height="178.0" layoutX="1602.0" layoutY="630.0" stroke="BLACK" strokeType="INSIDE" width="47.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6b7783" height="369.0" layoutX="1668.0" layoutY="439.0" stroke="BLACK" strokeType="INSIDE" width="47.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6b7783" height="196.0" layoutX="1743.0" layoutY="612.0" stroke="BLACK" strokeType="INSIDE" width="47.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6b7783" height="196.0" layoutX="1820.0" layoutY="612.0" stroke="BLACK" strokeType="INSIDE" width="47.0" />
+      <AreaChart layoutX="437.0" layoutY="382.0" prefHeight="451.0" prefWidth="473.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis prefHeight="410.0" prefWidth="29.0" side="LEFT" />
+         </yAxis>
+      </AreaChart>
+      <Text layoutX="435.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Budget" wrappingWidth="226.6708984375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <BarChart layoutX="947.0" layoutY="394.0" prefHeight="411.0" prefWidth="460.0">
+         <xAxis>
+            <CategoryAxis prefHeight="0.0" prefWidth="343.0" side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis prefHeight="370.0" prefWidth="42.0" side="LEFT" />
+         </yAxis>
+      </BarChart>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6b7783" height="349.0" layoutX="1024.0" layoutY="442.0" stroke="BLACK" strokeType="INSIDE" width="47.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6b7783" height="204.0" layoutX="1100.0" layoutY="587.0" stroke="BLACK" strokeType="INSIDE" width="47.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6b7783" height="315.0" layoutX="1179.0" layoutY="477.0" stroke="BLACK" strokeType="INSIDE" width="47.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6b7783" height="178.0" layoutX="1244.0" layoutY="613.0" stroke="BLACK" strokeType="INSIDE" width="47.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6b7783" height="127.0" layoutX="1315.0" layoutY="664.0" stroke="BLACK" strokeType="INSIDE" width="47.0" />
+      <Line endX="-65.0" endY="-227.0" layoutX="613.0" layoutY="888.0" startX="-129.0" startY="-156.0" />
+      <Line endX="-48.0" endY="-130.0" layoutX="623.0" layoutY="898.0" startX="-74.0" startY="-236.0" />
+      <Line endX="-58.0" endY="-139.0" layoutX="633.0" layoutY="908.0" startX="37.0" startY="-320.0" />
+      <Line endX="74.0" endY="-247.0" layoutX="643.0" layoutY="918.0" startX="27.70709228515625" startY="-330.70709228515625" />
+      <Line endX="64.0" endY="-257.0" layoutX="653.0" layoutY="928.0" startX="131.0" startY="-306.0" />
+      <Line endX="225.0" endY="-243.0" layoutX="663.0" layoutY="938.0" startX="122.0" startY="-318.0" />
+      <Text layoutX="939.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Income" wrappingWidth="217.6708984375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="1435.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Spending" wrappingWidth="226.6708984375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="595.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs . 300,000" textAlignment="CENTER" wrappingWidth="226.6708984375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="1097.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs . 550,000" textAlignment="CENTER" wrappingWidth="217.6708984375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="1609.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs . 250,000" textAlignment="CENTER" wrappingWidth="226.6708984375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="1052.0" layoutY="326.0">
+         <image>
+            <Image url="@../assest/07.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="1582.0" layoutY="323.0">
+         <image>
+            <Image url="@../assest/08.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="570.0" layoutY="326.0">
+         <image>
+            <Image url="@../assest/i8.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

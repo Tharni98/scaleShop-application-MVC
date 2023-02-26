@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.scaleShop.controller.OwnerIncomeFormController">
+   <children>
+      <Text layoutX="515.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INCOME REPORT" wrappingWidth="678.6744995117188">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5340909090909091" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#0f0768" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="1080.0" layoutY="1.0" opacity="0.82" stroke="#59ce8f" strokeType="INSIDE" width="420.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8398058252427185">
+               <stops>
+                  <Stop color="#a8e890" />
+                  <Stop color="#59ce8f" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <MotionBlur />
+         </effect>
+      </Rectangle>
+      <Button layoutX="22.0" layoutY="29.0" mnemonicParsing="false" onAction="#LogoutOnAction" prefHeight="40.0" prefWidth="150.0" style="-fx-background-radius: 30; -fx-background-color: #002B5B;" text="LogOut" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="140.0" fitWidth="350.0" layoutX="40.0" layoutY="822.0">
+         <image>
+            <Image url="@../assest/04.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Button layoutX="38.0" layoutY="162.0" mnemonicParsing="false" onAction="#DashboardOnAction" prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #425F57; -fx-background-radius: 30;" text="     Dash Board">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8398058252427185">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="56.0" layoutY="168.0">
+         <image>
+            <Image url="@../assest/i3.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="37.0" layoutY="298.0" mnemonicParsing="false" onAction="#IncomeOnAction" prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #425F57; -fx-background-radius: 30;" text="Income">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8398058252427185">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="37.0" layoutY="434.0" mnemonicParsing="false" onAction="#BillOnAction" prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #425F57; -fx-background-radius: 30;" text="Finance">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8398058252427185">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="38.0" layoutY="719.0" mnemonicParsing="false" onAction="#EmployeeOnAction" prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #425F57; -fx-background-radius: 30;" text="Employee">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8398058252427185">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="51.0" layoutY="306.0">
+         <image>
+            <Image url="@../assest/i12.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="51.0" layoutY="442.0">
+         <image>
+            <Image url="@../assest/i4.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="37.0" layoutY="579.0" mnemonicParsing="false" onAction="#ProductOnAction" prefHeight="70.0" prefWidth="350.0" style="-fx-background-color: #425F57; -fx-background-radius: 30;" text="Product">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.8398058252427185">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="51.0" layoutY="587.0">
+         <image>
+            <Image url="@../assest/i6.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="51.0" layoutY="727.0">
+         <image>
+            <Image url="@../assest/i10.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
